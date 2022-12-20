@@ -27,12 +27,12 @@
                     <td>The Subscription-ID passed from Mona</td>
                     <td></td>
                 </tr>
-                <!-- <tr>
+                <tr>
                     <td>item 2</td>
-                    <td>Voluptate laborum commodi enim unde?</td>
+                    <td>_sub with SAS key</td>
                     <td></td>
                 </tr>
-                <tr>
+            <!-- <tr>
                     <td>item 3</td>
                     <td>Similique reiciendis nisi molestiae officia.</td>
                     <td></td>
@@ -56,8 +56,8 @@
     console.log(urlParams.first);
     // get element by selector and set value
 
-    document.querySelector('tr:nth-child(2)>td:last-child').innerHTML = urlParams.subscription-id || "unknown";
-    // document.querySelector('tr:nth-child(3)>td:last-child').innerHTML = urlParams.second || "unknown";
+    document.querySelector('tr:nth-child(2)>td:last-child').innerHTML = urlParams.subscription || "unknown";
+     document.querySelector('tr:nth-child(3)>td:last-child').innerHTML = urlParams._sub || "unknown";
     // document.querySelector('tr:nth-child(4)>td:last-child').innerHTML = urlParams.third || "unknown";
     // document.querySelector('tr:nth-child(5)>td:last-child').innerHTML = urlParams.fourth || "unknown";
 
