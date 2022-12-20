@@ -6,7 +6,7 @@ html, body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: rgb(27, 163, 197);
 }
 
 main {
@@ -18,4 +18,41 @@ main {
 main > h1 {
   text-align: center;
   font-size: 3.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px;
+}
+/* set table width */
+table {
+    width: 100%;
+}
+td:first-child {
+background-color: #32a852;
+width: 40%;
+}
+td:nth-child(2) {
+background-color: #5696c7;
+}
+
+/* tr:nth-child(2)>td:nth-child(2){ */
+
+tr:nth-child(2)>td:last-child{
+    color: slateblue;
+    font-weight: 700;
+}
+
+tr >th {
+    font-size: 1.2em;
+    background-color: aquamarine;
+    font-style: italic;
+}
+
+/* All data left */
+tr{
+    text-align: left;
+}
+
+
