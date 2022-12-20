@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Landing Page</title>
+
 </head>
 
 <body>
     <main>
-        <h1>App Configuration Page</h1>
+        <h1>App Purchase Page</h1>
         <table>
             <thead>
                 <tr>
@@ -22,11 +23,11 @@
             <tbody>
 
                 <tr>
-                    <td>item 1</td>
-                    <td>Lorem, ipsum dolor.</td>
+                    <td>subscription</td>
+                    <td>The Subscription-ID passed from Mona</td>
                     <td></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td>item 2</td>
                     <td>Voluptate laborum commodi enim unde?</td>
                     <td></td>
@@ -40,25 +41,25 @@
                     <td>item 4</td>
                     <td>Autem dolores accusantium atque placeat!</td>
                     <td></td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
     </main>
 
+
 </body>
 <script>
-    const urlParams = new Proxy(new URLSearchParams(window.location.search), {
+    const urlParams  = new Proxy(new URLSearchParams(window.location.search), {
         get: (searchParams, prop) => searchParams.get(prop),
     });
     var el;
     console.log(urlParams.first);
     // get element by selector and set value
 
-    document.querySelector('tr:nth-child(2)>td:last-child').innerHTML = urlParams.first || "unknown";
-    document.querySelector('tr:nth-child(3)>td:last-child').innerHTML = urlParams.second || "unknown";
-    document.querySelector('tr:nth-child(4)>td:last-child').innerHTML = urlParams.third || "unknown";
-    document.querySelector('tr:nth-child(5)>td:last-child').innerHTML = urlParams.fourth || "unknown";
+    document.querySelector('tr:nth-child(2)>td:last-child').innerHTML = urlParams.subscription-id || "unknown";
+    // document.querySelector('tr:nth-child(3)>td:last-child').innerHTML = urlParams.second || "unknown";
+    // document.querySelector('tr:nth-child(4)>td:last-child').innerHTML = urlParams.third || "unknown";
+    // document.querySelector('tr:nth-child(5)>td:last-child').innerHTML = urlParams.fourth || "unknown";
 
 </script>
-
 </html>
